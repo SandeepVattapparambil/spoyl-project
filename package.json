@@ -4,7 +4,7 @@
   "description": "Coding exercise",
   "main": "node ./bin/www",
   "scripts": {
-    "dev:server": "nodemon --watch build --exec \"node bin/www\""
+    "dev:server": "nodemon --watch public --watch views --exec \"node bin/www\" "
   },
   "repository": {
     "type": "git",
