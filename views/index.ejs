@@ -17,11 +17,13 @@
     ​
     <div class="container">
       <div class="group">
-        <input type="text" required>
-        <button class="btn" type="button">
-          <span>Search</span>
-        </button>
-        <span class="bar"></span>
+        <form method='POST' action='/post'>
+          <input type="text" name="query" required>
+          <button class="btn" type="submit">
+            <span>Search</span>
+          </button>
+          <span class="bar"></span>
+        </form>
       </div>
     </div>
     <div class="container-grid">

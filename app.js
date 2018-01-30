@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 
 const index = require('./routes/index');
 const search = require('./routes/search');
+const searchHandler = require('./routes/searchHandler');
 
 const app = express();
 
@@ -20,8 +21,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/search', search);
-
+app.use('/search/:query', search);
+app.use('/post', searchHandler);
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
   let err = new Error('Not Found');

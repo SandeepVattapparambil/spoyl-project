@@ -73,3 +73,4 @@ makeAjaxCall(url, method)
     .catch((err) => {
         console.log(err);
     });
+    
