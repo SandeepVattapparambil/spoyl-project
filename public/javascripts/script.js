@@ -28,28 +28,25 @@ const makeAjaxCall = (url, methodType) => {
 
 const createDocumentFragment = (imageDataObj) => {
     let gridContainer = document.querySelector('.grid');
-    let image = '<img class="thumb" src='+imageDataObj.thumb+'>';
-    let likes = '<span>'+imageDataObj.likes+' likes</span>'
-    let dom = '<div class="holder holder-1"></div>';
-    // let fragment = document.createDocumentFragment();
-    // let holder = document.createElement('div');
-    // holder.classList = 'holder';
-    // holder.classList += ' holder-1';
-    // let image = document.createElement('img');
-    // image.src = imageDataObj.thumb;
-    // image.className = 'thumb';
-    // let likes = document.createElement('span');
-    // likes.textContent = imageDataObj.likes;
-    // let user = document.createElement('span');
-    // user.textContent = imageDataObj.user;
-    // let profilePicture = document.createElement('img');
-    // profilePicture.src = imageDataObj.profileImage;
-    // holder.appendChild(image);
-    // holder.appendChild(likes);
-    // holder.appendChild(user);
-    // holder.appendChild(profilePicture);
-    // fragment.appendChild(holder);
-    // gridContainer.appendChild(fragment);
+    let fragment = document.createDocumentFragment();
+    let holder = document.createElement('div');
+    holder.classList = 'holder';
+    holder.classList += ' holder-1';
+    let image = document.createElement('img');
+    image.src = imageDataObj.thumb;
+    image.className = 'thumb';
+    let likes = document.createElement('span');
+    likes.textContent = imageDataObj.likes;
+    let user = document.createElement('span');
+    user.textContent = imageDataObj.user;
+    let profilePicture = document.createElement('img');
+    profilePicture.src = imageDataObj.profileImage;
+    holder.appendChild(image);
+    holder.appendChild(likes);
+    holder.appendChild(user);
+    holder.appendChild(profilePicture);
+    fragment.appendChild(holder);
+    gridContainer.appendChild(fragment);
 };
 
 const processDataArray = (dataArray) => {
