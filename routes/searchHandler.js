@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET search page. */
+/* post search form. */
 router.post('/', (req, res, next) => {
-  let searchQuery = req.body.query;
-  res.redirect('/search/' + searchQuery +'');
+  let searchTerm = req.body.searchTerm;
+  //redirect to search page
+  res.redirect('/search/' + searchTerm +'');
 });
 
 module.exports = router;

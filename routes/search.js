@@ -1,12 +1,11 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Router({ mergeParams : true });
 
 /* GET search page. */
 router.get('/', (req, res, next) => {
-  let query = req.params.query || null;
+  console.log(req.params);
   res.render('search', {
-    title: 'Spoyl Project',
-    query: query
+    title: 'Spoyl Project'
   });
 });
 
