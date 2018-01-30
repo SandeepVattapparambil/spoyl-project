@@ -1,0 +1,19 @@
+{
+  "name": "spoyl-project",
+  "version": "1.0.0",
+  "description": "Coding exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SandeepVattapparambil/spoyl-project.git"
+  },
+  "author": "Sandeep V",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SandeepVattapparambil/spoyl-project/issues"
+  },
+  "homepage": "https://github.com/SandeepVattapparambil/spoyl-project#readme"
+}
