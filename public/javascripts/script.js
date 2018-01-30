@@ -36,11 +36,14 @@ const createDocumentFragment = (imageDataObj) => {
     image.src = imageDataObj.thumb;
     image.className = 'thumb';
     let likes = document.createElement('span');
-    likes.textContent = imageDataObj.likes;
+    likes.textContent = imageDataObj.likes +' likes';
+    likes.className = 'likes';
     let user = document.createElement('span');
+    user.className = 'user';
     user.textContent = imageDataObj.user;
     let profilePicture = document.createElement('img');
     profilePicture.src = imageDataObj.profileImage;
+    profilePicture.className = 'profilePic';
     holder.appendChild(image);
     holder.appendChild(likes);
     holder.appendChild(user);

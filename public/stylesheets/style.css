@@ -42,6 +42,14 @@ a {
   padding: 10px 50px 50px;
 }
 
+.container-grid {
+  width: 1200px;
+  margin: 30px auto 0;
+  display: block;
+  background: #FFF;
+  padding: 10px 50px 50px;
+}
+
 /* form starting stylings ------------------------------- */
 
 .group {
@@ -208,7 +216,7 @@ input:focus~.highlight {
   background: #fff;
   border-radius: 2px;
   display: inline-block;
-  height: 300px;
+  height: 270px;
   margin: 1rem;
   position: relative;
   width: 300px;
@@ -226,4 +234,22 @@ input:focus~.highlight {
 .thumb{
   height:200px;
   width: 100%;
+  margin-bottom: 15px;
+}
+
+.user{
+  font-weight: 600; 
+}
+
+.profilePic{
+  height: 50px;
+  border-radius: 50%;
+  float: right;
+  margin: -10px 5px 5px;
+}
+.likes{
+  margin: 5px;
+  padding: 10px;
+  background: #ccc;
+  border-radius: 25px;
 }
