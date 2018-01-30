@@ -27,7 +27,7 @@ const makeAjaxCall = (url, methodType) => {
 };
 
 const createDocumentFragment = (imageDataObj) => {
-    let gridContainer = document.querySelector('.grid');
+    let gridContainer = document.querySelector('.container-grid');
     let fragment = document.createDocumentFragment();
     let holder = document.createElement('div');
     holder.classList = 'holder';

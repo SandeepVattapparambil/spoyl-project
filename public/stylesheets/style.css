@@ -43,7 +43,7 @@ a {
 }
 
 .container-grid {
-  width: 1200px;
+  width: 1100px;
   margin: 30px auto 0;
   display: block;
   background: #FFF;
@@ -238,7 +238,12 @@ input:focus~.highlight {
 }
 
 .user{
+  width: 150px;
   font-weight: 600; 
+  overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    display:inline-block;
 }
 
 .profilePic{
