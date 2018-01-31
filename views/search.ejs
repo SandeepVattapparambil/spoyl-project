@@ -23,18 +23,22 @@
         <span class="bar"></span>
       </div>
     </div>
+    <div class="container">
+      <div class="alert alert-success"> 
+          <p class="info">Showing <%= imageData.results.length %> results for your search "<%= query%>"</p>
+      </div>
+        
+    </div>
+
     <div class="container-grid">
       <% for(var i=0; i<imageData.results.length; i++){ %>
-        <div class="holder holder-1">
-          <img src=<%=i mageData.results[i].urls.thumb %> class="thumb">
-          <span class="likes">
-            <%= imageData.results[i].likes %> Likes</span>
-          <span class="user">
-            <%= imageData.results[i].user.name %>
-          </span>
-          <img class="profilePic" src=<%=i mageData.results[i].user.profile_image.medium %>>
-        </div>
-
+      <div class="holder holder-1">
+      <img src=<%= imageData.results[i].urls.thumb %> class="thumb">
+        <span class="likes"><%= imageData.results[i].likes %> Likes</span>
+        <span class="user"><%= imageData.results[i].user.name %> </span>
+        <img class="profilePic" src=<%= imageData.results[i].user.profile_image.medium %>>
+      </div>
+        
         <% }%>
     </div>
   </div>

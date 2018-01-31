@@ -39,7 +39,6 @@ a {
   margin: 30px auto 0;
   display: block;
   background: #FFF;
-  padding: 10px 50px 50px;
 }
 
 .container-grid {
@@ -238,7 +237,7 @@ input:focus~.highlight {
 }
 
 .user{
-  width: 145px;
+  width: 136px;
   font-weight: 600; 
   overflow: hidden;
     white-space:nowrap;
@@ -257,4 +256,19 @@ input:focus~.highlight {
   padding: 10px;
   background: #ccc;
   border-radius: 25px;
+}
+
+.info{
+  text-align: center;
+}
+
+.alert-success {
+  color: #c0b300;
+  background-color: #f8fcc5;
+  border-color: #fde247;
+}
+.alert {
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-radius: 4px;
 }
