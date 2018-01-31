@@ -1,3 +1,12 @@
+/**
+ * 
+ * 
+ * Optional client-side side api
+ * 
+ * 
+ * 
+ * 
+ */
 //unsplash clientId
 const clientId = '5a419933621f55950741e4c30182c1d5f99974112a96cf0c49d8d9091cc0ba7e';
 let url = 'https://api.unsplash.com/photos?client_id=' + clientId + '';
