@@ -263,12 +263,11 @@ input:focus~.highlight {
 }
 
 .alert-success {
-  color: #c0b300;
-  background-color: #f8fcc5;
-  border-color: #fde247;
+  color: #9e9d24;
+  background-color: #f0f4c3;
 }
 .alert {
   margin-bottom: 20px;
-  border: 1px solid;
+  border: 1px solid #dce775;
   border-radius: 4px;
 }
