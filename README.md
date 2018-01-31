@@ -5,7 +5,7 @@ Coding exercise for Spoyl
 ## Front end
 - HTML5, CSS3, JS
 
-##Back end
+## Back end
 - NodeJS + Express + ejs
 
 ## Installation
