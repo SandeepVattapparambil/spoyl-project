@@ -34,6 +34,10 @@ a {
   color: #737070;
 }
 
+.header> span.nav >a{
+  text-decoration: none;
+  color: #737070;
+}
 .container {
   width: 600px;
   margin: 30px auto 0;
