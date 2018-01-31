@@ -238,7 +238,7 @@ input:focus~.highlight {
 }
 
 .user{
-  width: 150px;
+  width: 145px;
   font-weight: 600; 
   overflow: hidden;
     white-space:nowrap;
