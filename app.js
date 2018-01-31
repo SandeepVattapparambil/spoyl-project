@@ -10,9 +10,14 @@ const searchHandler = require('./routes/searchHandler');
 
 const app = express();
 
+//unsplash clientId
+const clientId = '5a419933621f55950741e4c30182c1d5f99974112a96cf0c49d8d9091cc0ba7e';
+global.clientId = clientId;
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+app.disable('x-powered-by');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
