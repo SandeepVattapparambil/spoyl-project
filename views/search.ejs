@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-      <div class="header">
-        <span>Spoyl-SSR-Project</span>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="header">
+    <span>Spoyl-SSR-Project</span>
+  </div>
+  <div class="main">
+    ​
+    <div class="container">
+      <div class="group">
+        <input type="text" placeholder='<%= query %>' required>
+        <button class="btn" type="button">
+          <span>Search</span>
+        </button>
+        <span class="bar"></span>
       </div>
-      <div class="main">
-        ​
-        <div class="container">
-          <div class="group">
-            <input type="text" placeholder='<%= query %>' required>
-            <button class="btn" type="button">
-              <span>Search</span>
-            </button>
-            <span class="bar"></span>
-          </div>
+    </div>
+    <div class="container-grid">
+      <% for(var i=0; i<imageData.results.length; i++){ %>
+        <div class="holder holder-1">
+          <img src=<%=i mageData.results[i].urls.thumb %> class="thumb">
+          <span class="likes">
+            <%= imageData.results[i].likes %> Likes</span>
+          <span class="user">
+            <%= imageData.results[i].user.name %>
+          </span>
+          <img class="profilePic" src=<%=i mageData.results[i].user.profile_image.medium %>>
         </div>
-        <div class="container-grid">
-    
-        </div>
-      </div>
-    
-    </body>
+
+        <% }%>
+    </div>
+  </div>
+
+</body>
+
 </html>
