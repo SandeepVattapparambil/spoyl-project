@@ -27,11 +27,17 @@
       </div>
     </div>
     <div class="container-grid">
-
+    <% for(var i=0; i<imageData.length; i++){ %>
+      <div class="holder holder-1">
+      <img src=<%= imageData[i].urls.thumb %> class="thumb">
+        <span class="likes"><%= imageData[i].likes %> Likes</span>
+        <span class="user"><%= imageData[i].user.name %> </span>
+        <img class="profilePic" src=<%= imageData[i].user.profile_image.medium %>>
+      </div>
+        
+        <% }%>
     </div>
   </div>
-
-  <script src="javascripts/script.js"></script>
 </body>
 
 </html>
