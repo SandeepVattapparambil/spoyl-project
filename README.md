@@ -1,4 +1,7 @@
 # spoyl-project
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/SandeepVattapparambil/spoyl-project.svg)](https://greenkeeper.io/)
+
 Coding exercise for Spoyl
 live link : https://spoyl-test.herokuapp.com/
 
